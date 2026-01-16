@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cotización Sitio 08 - Parque Restauración Puntra</title>
+  <style>
+    /*
+      Refreshed styling for the quotation page.  The layout has been tuned to look
+      clean and professional on both large and small screens.  Font sizes and
+      spacing have been harmonised and the table styling improved for better
+      legibility.  The right‑hand image now flexes vertically to remain centred
+      alongside the text content.  A neutral colour palette improves contrast
+      without overpowering the information presented.
+    */
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 40px;
+      background-color: #f7f9fb;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Container uses flexbox to lay out the text and image side by side, wrapping on small screens */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    /* Left column grows twice as much as the right column on wide screens */
+    .left {
+      flex: 2;
+      min-width: 300px;
+    }
+
+    /* Right column centres the image vertically */
+    .right {
+      flex: 1;
+      min-width: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin: 0 0 16px;
+      color: #2c3e50;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin: 24px 0 8px;
+      color: #2c3e50;
+    }
+
+    p {
+      margin: 8px 0;
+    }
+
+    /* Pricing table styling */
+    .price-table {
+      margin-top: 16px;
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 16px;
+    }
+
+    .price-table th,
+    .price-table td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+
+    .price-table th {
+      background-color: #e6eef5;
+      font-weight: bold;
+    }
+
+    .price-table tr:nth-child(even) td {
+      background-color: #f2f5f9;
+    }
+
+    .price-table td strong {
+      font-size: 18px;
+      color: #2c3e50;
+    }
+
+    /* Footer styles */
+    .footer {
+      margin-top: 32px;
+      font-size: 14px;
+      color: #555;
+    }
+    .footer p {
+      margin: 4px 0;
+    }
+    .footer strong {
+      display: block;
+      margin-bottom: 8px;
+      color: #2c3e50;
+    }
+
+    /* Image styling */
+    .right img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Cotización Sitio N° 08</h1>
+  <p><strong>Proyecto:</strong> Parque Restauración Puntra</p>
+  <p><strong>Fecha de creación:</strong> 14 de enero de 2026</p>
+  <p><strong>Cliente:</strong> Clara Matta</p>
+  <p><strong>Teléfono:</strong> +56 9 8559 5137</p>
+  <div class="container">
+    <div class="left">
+      <h2>Detalles del sitio</h2>
+      <p>
+        Bosque nativo, acceso al monte profundo y antiguo, sendero, deslinda con la histórica ex línea ferroviaria,
+        reforestación y accesos al Río Puntra por servidumbres y senderos autoconstruidos de reforestación por el proyecto.
+      </p>
+      <p>
+        Camino 4×2 listo. Plan de Manejo de CONAF aprobado en el sitio. Superficie de 0,5 hectáreas.
+      </p>
+
+      <h2>Valores</h2>
+      <table class="price-table">
+        <tr>
+          <th>Concepto</th>
+          <th>Valor</th>
+        </tr>
+        <tr>
+          <td>Valor UF</td>
+          <td>358,25</td>
+        </tr>
+        <tr>
+          <td>Precio (CLP)</td>
+          <td>$ 14.240.322</td>
+        </tr>
+        <tr>
+          <td>Descuento (UF)</td>
+          <td>300</td>
+        </tr>
+        <tr>
+          <td><strong>Total (CLP)</strong></td>
+          <td><strong>$ 11.924.904</strong></td>
+        </tr>
+      </table>
+
+      <div class="footer">
+        <p><strong>Este presupuesto caduca el 25 de enero de 2026</strong></p>
+        <p><em>¿Tienes alguna pregunta? Ponte en contacto conmigo:</em></p>
+        <p>Joaquín Undurraga</p>
+        <p><a href="mailto:joaquin.undurraga@mingamos.cl">joaquin.undurraga@mingamos.cl</a></p>
+        <p>Mingamos</p>
+        <p>Apoquindo 6550 oficina 205</p>
+        <p>Santiago, Metropolitana 7508050</p>
+        <p>Chile</p>
+        <br>
+        <p><strong>Condiciones de compra</strong></p>
+        <p>Para reservar el sitio de tu interés, debes realizar una transferencia de $300.000. La cotización se considerará aceptada una vez efectuado el pago de la reserva, momento en el cual el sitio quedará apartado y dejará de estar disponible para otros interesados.</p>
+        <p>*El cobro se realiza en UF. Valor referencial en pesos chilenos al día de la cotización (14‑01‑2026). Río Puntra.</p>
+      </div>
+    </div>
+    <div class="right">
+      <img src="assets/collage_puntra35.png" alt="Sitio cerca de Río Navegable">
+    </div>
+  </div>
+</body>
+</html>
